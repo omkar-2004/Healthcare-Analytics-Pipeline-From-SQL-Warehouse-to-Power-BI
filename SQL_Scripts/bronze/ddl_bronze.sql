@@ -33,12 +33,12 @@ BEGIN
 			organization_id VARCHAR(255),
 			payer_id VARCHAR(255),
 			encounter_class VARCHAR(255),
-			encounter_code INT,
+			encounter_code BIGINT,
 			encounter_description VARCHAR(255),
 			base_encounter_cost FLOAT,
 			Total_claim_cost FLOAT,
 			payer_coverage FLOAT,
-			reason_code INT,
+			reason_code BIGINT,
 			reason_description VARCHAR(255)
 		);
 		SET @End_Time = GETDATE();
@@ -55,7 +55,7 @@ BEGIN
 			organization_address VARCHAR(255),
 			organization_city VARCHAR(255),
 			organization_state VARCHAR(255),
-			organization_zip INT,
+			organization_zip BIGINT,
 			organization_lat FLOAT,
 			organization_lon FLOAT
 		);
@@ -85,7 +85,7 @@ BEGIN
 			patient_city VARCHAR(255),
 			patient_state VARCHAR(255),
 			patient_country VARCHAR(255),
-			patient_zip INT,
+			patient_zip BIGINT,
 			patient_lat VARCHAR(255),
 			patent_lon VARCHAR(255)
 		);
@@ -103,7 +103,7 @@ BEGIN
 			Payer_address VARCHAR(255),
 			payer_city VARCHAR(255),
 			payer_state_headquartered VARCHAR(255),
-			payer_zip INT,
+			payer_zip BIGINT,
 			phone VARCHAR(255)
 		);
 		SET @End_Time = GETDATE();
@@ -119,10 +119,10 @@ BEGIN
 			stop DATE,
 			patient_id VARCHAR(255),
 			encounter_id VARCHAR(255),
-			procedure_code INT,
+			procedure_code BIGINT,
 			procedure_description VARCHAR(255),
-			priocedure_base_cost INT,
-			reason_code INT,
+			priocedure_base_cost BIGINT,
+			reason_code BIGINT,
 			reason_description VARCHAR(255)
 		);
 		SET @End_Time = GETDATE();
@@ -146,5 +146,3 @@ BEGIN
 
 	END CATCH
 END
-
-EXEC bronze.create_tables
