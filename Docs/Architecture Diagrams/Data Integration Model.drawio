@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="4bFUNV2EFBFIfcUmEL9H">
+    <mxGraphModel dx="755" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hoowAxRAwGNeraL_LTj3-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Times New Roman;fontStyle=0;fontSize=20;" value="&lt;h3&gt;Integration Model&lt;/h3&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="199.94" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-41" edge="1" parent="1" source="hoowAxRAwGNeraL_LTj3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="hoowAxRAwGNeraL_LTj3-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-6" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="bronze.encounters_info" vertex="1">
+          <mxGeometry height="150" width="160" x="309.94" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-7" parent="hoowAxRAwGNeraL_LTj3-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="encounter_id" vertex="1">
+          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-8" parent="hoowAxRAwGNeraL_LTj3-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="patient_id" vertex="1">
+          <mxGeometry height="30" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-9" parent="hoowAxRAwGNeraL_LTj3-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="organization_id" vertex="1">
+          <mxGeometry height="30" width="160" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-10" parent="hoowAxRAwGNeraL_LTj3-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="payer_id" vertex="1">
+          <mxGeometry height="30" width="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-16" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="bronze.organizations_info" vertex="1">
+          <mxGeometry height="60" width="160" x="549.94" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-19" parent="hoowAxRAwGNeraL_LTj3-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="organization_id" vertex="1">
+          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-36" edge="1" parent="1" source="hoowAxRAwGNeraL_LTj3-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hoowAxRAwGNeraL_LTj3-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-39" edge="1" parent="1" source="hoowAxRAwGNeraL_LTj3-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hoowAxRAwGNeraL_LTj3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-21" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="bronze.patients_info" vertex="1">
+          <mxGeometry height="60" width="160" x="59.94" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-23" parent="hoowAxRAwGNeraL_LTj3-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="patient_id" vertex="1">
+          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-26" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="bronze.payers_info" vertex="1">
+          <mxGeometry height="60" width="160" x="549.94" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-27" parent="hoowAxRAwGNeraL_LTj3-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="payer_id" vertex="1">
+          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-28" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="bronze.procedures_info" vertex="1">
+          <mxGeometry height="90" width="160" x="50" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-30" parent="hoowAxRAwGNeraL_LTj3-28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="patient_id" vertex="1">
+          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-29" parent="hoowAxRAwGNeraL_LTj3-28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="encounter_id" vertex="1">
+          <mxGeometry height="30" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-37" edge="1" parent="1" source="hoowAxRAwGNeraL_LTj3-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="hoowAxRAwGNeraL_LTj3-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoowAxRAwGNeraL_LTj3-38" edge="1" parent="1" source="hoowAxRAwGNeraL_LTj3-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="hoowAxRAwGNeraL_LTj3-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
