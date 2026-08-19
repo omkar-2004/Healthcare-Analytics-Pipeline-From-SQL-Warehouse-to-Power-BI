@@ -1,20 +1,20 @@
-		/*
-		=============================================================
-		Stored Procedure: Load Bronze Layer(Source -> Bronze)
-		=============================================================
-		Script Purpose:
-			This script load the data into the 'bronze' schema from external CSV files.
-			It performs the following actions:
-			- Truncates the bronze tables before loading data.
-			- Uses the 'BULK INSERT' command to load data from csv to bronze tables.
-			- Calculates to total and individual duration to load data.
+/*
+=============================================================
+Stored Procedure: Load Bronze Layer(Source -> Bronze)
+=============================================================
+Script Purpose:
+	This script load the data into the 'bronze' schema from external CSV files.
+	It performs the following actions:
+	- Truncates the bronze tables before loading data.
+	- Uses the 'BULK INSERT' command to load data from csv to bronze tables.
+	- Calculates to total and individual duration to load data.
 	
-		Usage example:
-			EXEC bronze.load_bronze
+Usage example:
+	EXEC bronze.load_bronze
 
-		Note:
-			Change the file locations to csv locations.
-		*/
+Note:
+	Change the file locations to csv locations.
+*/
 CREATE or Alter PROCEDURE bronze.load_bronze AS
 BEGIN
 	declare @Start_Time DATETIME, @End_Time DATETIME, @Batch_Start_Time DATETIME, @Batch_End_Time DATETIME;
@@ -34,11 +34,8 @@ BEGIN
 		with(
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
-			ROWTERMINATOR = '\n',
-			FORMAT = 'CSV',
-			TABLOCK,
-			MAXERRORS = 10,
-            ERRORFILE = 'D:\Project\Healthcare Analytics Pipeline From SQL Warehouse to Power BI\Healthcare-Analytics-Pipeline-From-SQL-Warehouse-to-Power-BI\Dataset\CSV\encounters_errors.txt'
+			ROWTERMINATOR = '\n', 
+			TABLOCK
 		);
 		SET @End_Time = GETDATE();
 		print '>>>Load Duration: ' + cast(DATEDIFF(second,@Start_Time,@End_Time) as NVARCHAR) + ' Seconds';
@@ -54,8 +51,7 @@ BEGIN
 		with (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
-			ROWTERMINATOR = '\n',
-			FORMAT = 'CSV',
+			ROWTERMINATOR = '\n', 
 			TABLOCK
 		);
 		SET @End_Time = GETDATE();
@@ -71,8 +67,7 @@ BEGIN
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
-			ROWTERMINATOR = '\n',
-			FORMAT = 'CSV',
+			ROWTERMINATOR = '\n', 
 			TABLOCK
 		);
 		SET @End_Time = GETDATE();
@@ -86,10 +81,9 @@ BEGIN
 		BULK INSERT bronze.payers_info
 		FROM 'D:\Project\Healthcare Analytics Pipeline From SQL Warehouse to Power BI\Healthcare-Analytics-Pipeline-From-SQL-Warehouse-to-Power-BI\Dataset\CSV\payers.csv'
 		WITH (
-			FIRSTROW= 2,
-			FIELDTERMINATOR =',',
-			ROWTERMINATOR = '\n',
-			FORMAT = 'CSV',
+			FIRSTROW = 2,
+			FIELDTERMINATOR = ',',
+			ROWTERMINATOR = '\n', 
 			TABLOCK
 		);
 		SET @End_Time = GETDATE();
@@ -106,8 +100,7 @@ BEGIN
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
-			ROWTERMINATOR = '\n',
-			FORMAT = 'CSV',
+			ROWTERMINATOR = '\n', 
 			TABLOCK
 		);
 		SET @End_Time = GETDATE();
