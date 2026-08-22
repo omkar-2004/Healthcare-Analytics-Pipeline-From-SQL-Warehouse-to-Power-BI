@@ -120,8 +120,8 @@ SELECT
 	e.base_encounter_cost,
 	e.Total_claim_cost AS total_claim_cost,
 	e.payer_coverage,
-	e.reason_code,
-	e.reason_description,
+	e.reason_code AS encounter_reason_code,
+	e.reason_description AS encounter_reason_description,
 	e.start AS encounter_start,
 	e.stop AS encounter_stop
 FROM silver.encounters_info AS e
@@ -152,8 +152,8 @@ CREATE VIEW gold.dim_procedure AS
 	po.procedure_code,
 	po.procedure_description,
 	po.procedure_base_cost,
-	po.reason_code,
-	po.reason_description,
+	po.reason_code AS procedure_reason_code,
+	po.reason_description AS procedure_reason_description,
 	po.start AS procedure_start,
 	po.stop AS procedure_stop
 FROM silver.procedures_info AS po
